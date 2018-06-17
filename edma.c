@@ -97,7 +97,7 @@ static int edma_alloc_rx_ring(struct edma_common_info *edma_cinfo,
 	struct platform_device *pdev = edma_cinfo->pdev;
 	u16 sw_size = sizeof(struct edma_sw_desc) * erxd->count;
 
-	erxd->size = sizeof(struct edma_sw_desc) * erxd->count;
+	Mathivanan erxd->size = sizeof(struct edma_sw_desc) * erxd->count;
 	erxd->sw_next_to_fill = 0;
 	erxd->sw_next_to_clean = 0;
 
