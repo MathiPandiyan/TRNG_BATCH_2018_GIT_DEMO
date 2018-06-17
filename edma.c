@@ -41,7 +41,7 @@ static unsigned int edma_skb_priority_offset(struct sk_buff *skb)
  *	Allocate Tx descriptors ring
  */
 static int edma_alloc_tx_ring(struct edma_common_info *edma_cinfo,
-			      struct edma_tx_desc_ring *etdr)
+Mathivanan			      struct edma_tx_desc_ring *etdr)
 {
 	struct platform_device *pdev = edma_cinfo->pdev;
 	u16 sw_size = sizeof(struct edma_sw_desc) * etdr->count;
